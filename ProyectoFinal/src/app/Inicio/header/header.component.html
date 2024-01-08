@@ -1,0 +1,34 @@
+<!--<nav class="bg-gray-800 text-white p-4">
+  <div class="container mx-auto flex justify-between items-center">
+    <a href="#" class="text-white text-lg font-semibold">Mi Sitio</a>
+    <div class="flex space-x-4">
+      <a href="/primera-pag" class="hover:text-gray-300">Inicio</a>
+      <a href="/estados" class="hover:text-gray-300">Información Básica</a>
+      <a [routerLink]="['/estados']" routerLinkActive="active"  class="hover:text-gray-300">Estados y sus Especies</a>
+      <a href="/contacto" class="hover:text-gray-300">Contacto</a>
+    </div>
+  </div>
+</nav>-->
+
+<header class="text-black body-font bg-sky-400">
+  <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+    <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+      <span class="ml-3 text-xl">ESCOM</span>
+    </a>
+    <nav class="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-white	flex flex-wrap items-center text-base justify-center">
+      <button (click)="pagina1()" class="mr-5 hover:bg-sky-300 rounded">Inicio</button>
+      <button (click)="pagina2()" class="mr-5 hover:bg-sky-300 rounded">Información Basica</button>
+      <a class="mr-5 hover:text-blue-900">Estados Y Sus Especies</a>
+      <button (click)="pagina4()" class="mr-5 hover:bg-sky-300 rounded">Contacto</button>
+    </nav>
+    <button (click)="navegar()" class="inline-flex items-center bg-sky-400 border-0 py-1 px-3 focus:outline-none hover:bg-sky-300 rounded text-base mt-4 md:mt-0">
+      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+        <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+        <circle cx="8.5" cy="7" r="4"></circle>
+      </svg>
+    </button>
+    
+  </div>
+</header>
+
+  

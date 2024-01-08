@@ -1,0 +1,17 @@
+// estilos.scss
+
+.text-gray-600 {
+    // Estilos para abarcar parte de la pantalla
+    height: 60vh; /* Ajusta la altura según tu preferencia */
+    min-height: 400px; /* Altura mínima para asegurar visibilidad */
+    background-color: #f3f3f3; /* Cambia el color de fondo según lo que desees */
+    
+    .container {
+      max-width: 1200px; /* Máximo ancho del contenido */
+      margin: 0 auto; /* Centrar horizontalmente */
+      padding: 2rem 1rem; /* Ajusta el relleno según tus preferencias */
+    }
+  
+    /* Otros estilos que puedas necesitar */
+  }
+   
