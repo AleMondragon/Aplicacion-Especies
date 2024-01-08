@@ -1,0 +1,49 @@
+
+Documentación de la API para la Gestión de Especies
+
+Configuración General (config.py)
+- Modo de Desarrollo: Activo (DEBUG = True).
+- Conexión a la Base de Datos MySQL:
+  - Host: localhost
+  - Usuario: root
+  - Contraseña: Su_Contrasena (cambiar a la contraseña real)
+  - Nombre de la Base de Datos: Especies
+
+Endpoints (app.py)
+
+1. Listar toda la información de las especies (/Especies)
+   - Método: GET
+   - Función: listar_toda_informacion
+   - Descripción: Devuelve información detallada de todas las especies en la base de datos.
+   - Respuestas:
+     - 200 OK: Lista de especies y sus detalles.
+
+- Tecnología: Flask, Flask_MySQLdb para la conexión a la base de datos.
+- Estructura de Datos: Se realiza una consulta a la base de datos para obtener información de especies, estados y alcaldías.
+
+/Especies
+Métodos: GET
+
+/Especies/Estados
+Métodos: GET, POST
+
+/Especies/Estados/<id_estado>
+Métodos: GET, DELETE, PUT
+
+/Especies/Alcaldias
+Métodos: GET, POST
+
+/Especies/Alcaldias/<id_alcaldia>
+Métodos: GET, DELETE, PUT
+
+/Especies/InformacionComun
+Métodos: GET, POST
+
+/Especies/InformacionComun/<id_informacion_comun>
+Métodos: GET, DELETE, PUT
+
+/Especies/Usuarios
+Métodos: POST, GET
+
+/Especies/Usuarios/<correo>
+Métodos: GET, PUT, DELETE
