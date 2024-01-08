@@ -19,6 +19,9 @@ export class HeaderComponent {
   pagina2(){
     this.router.navigate(['/estados'])
   }
+  pagina3(){
+    this.router.navigate(['/especies'])
+  }
   pagina4(){
     this.router.navigate(['/contacto'])
   }
