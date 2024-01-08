@@ -8,6 +8,7 @@ import { CrudComponent } from "./crud/crud.component";
 import { ActusuarioComponent } from "./actusuario/actusuario.component";
 import { UsuarioregComponent } from "./usuarioreg/usuarioreg.component";
 import { EliusuarioComponent } from "./eliusuario/eliusuario.component";
+import { EspeciesComponent } from './especies/especies.component';
 
 
 
@@ -22,6 +23,7 @@ export const routes: Routes = [
     {path:'actusuario',component:ActusuarioComponent},
     {path:'usuarioreg', component:UsuarioregComponent},
     {path:'eliusuario', component:EliusuarioComponent},
+    {path:'especies', component:EspeciesComponent}
 
 ];
 
