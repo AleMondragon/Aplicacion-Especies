@@ -21,29 +21,63 @@ Endpoints (app.py)
 - Tecnología: Flask, Flask_MySQLdb para la conexión a la base de datos.
 - Estructura de Datos: Se realiza una consulta a la base de datos para obtener información de especies, estados y alcaldías.
 
+
 /Especies
 Métodos: GET
+Muestra toda la información de todas las especies (no usuarios); es decir Alcaldias/Municipios, Estados y la información común de estas.
+
 
 /Especies/Estados
 Métodos: GET, POST
+Cuenta con un método GET que nos permite visualizar todos los estados que pertenecen a la Tabla Estados.
+Y un método POST que nos permite registrar un Estado de la Tabla Estados (por id).
+
 
 /Especies/Estados/<id_estado>
 Métodos: GET, DELETE, PUT
+El método GET nos permite visualizar un estado de la Tabla Estados.
+El método DELETE nos permite eliminar un estado de la Tabla Estados.
+El método PUT nos permite actualizar un Estado de la Tabla Estados.
+(Esto lo hace por medio de la llave primaria que es única).
+
 
 /Especies/Alcaldias
 Métodos: GET, POST
+Cuenta con un método GET que nos permite visualizar todas las Alcaldías.
+Y un método POST que nos permite registrar una Alcaldía (por id).
+
 
 /Especies/Alcaldias/<id_alcaldia>
 Métodos: GET, DELETE, PUT
+El método GET nos permite visualizar una Alcaldía de la Tabla Alcaldías.
+El método DELETE nos permite eliminar una Alcaldía de la Tabla Alcaldías.
+El método PUT nos permite actualizar una Alcaldía de la Tabla Alcaldías.
+(Esto lo hace por medio de la llave primaria que es única).
+
 
 /Especies/InformacionComun
 Métodos: GET, POST
+Cuenta con un método GET que nos permite visualizar todas las secciones del apartado de la InformacioComun de la Tabla InformacioComun.
+Y un método POST que nos permite registrar una sección de la InformacionComun (por id).
+
 
 /Especies/InformacionComun/<id_informacion_comun>
 Métodos: GET, DELETE, PUT
+El método GET nos permite visualizar una sección de la InformacioComun de la Tabla InformacioComun.
+El método DELETE nos permite eliminar una sección de la InformacioComun de la Tabla InformacioComun.
+El método PUT nos permite actualizar una sección de la InformacioComun de la Tabla InformacioComun.
+(Esto lo hace por medio de la llave primaria que es única).
+
 
 /Especies/Usuarios
 Métodos: POST, GET
+Cuenta con un método GET que nos permite visualizar todos los Usuarios de la tabla Usuarios (solo los superusuarios lo pueden ver).
+Y un método POST que nos permite registrar un Usuario (por id, el usuario también puede hacer esto).
+
 
 /Especies/Usuarios/<correo>
 Métodos: GET, PUT, DELETE
+El método GET nos permite visualizar un Usuario de la Tabla Usuarios.
+El método DELETE nos permite eliminar un Usuario de la Tabla Usuarios (el usuario también puede hacer esto).
+El método PUT nos permite actualizar un Usuario de la Tabla Usuarios (el usuario también puede hacer esto)..
+(Esto lo hace por medio de la llave primaria que es única).
